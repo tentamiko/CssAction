@@ -1,119 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+/*  初期状態からついているpaddingやmarginを消す動作  */
+}
+
+html, body {
+    height: 100%;
+}
+body{
+    padding: 0;
+    padding-top:64px;
+}
+
 .mytweet {
     background: red;
 }
 
-.align-center{
+.align-center {
     text-align: center;
 }
 
-#title h1{
+.document{
+    color: #fff;
+margin:70px;
+}
+
+.bg-img{
+    background-image: url(mokume.jpg);
+    /* ↑はclass:bg-imageにmokume.jpgを入れている */
+    width: 100%;
+    height: 200px;
+    background-attachment: fixed;
+    /* ↑はその画像がスクロールについてこなくしている　*/
+}
+
+.bg-img .sns-button {
+    background-color: red;
+    position: absolute;
+    /*↑場所が指定できる*/
+    width: 100px;
+    bottom: 0px;
+}
+
+nav{
+    height: 64px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #d800ff;
+    font-size: 50px;
+    position: fixed;
+    /*  ↑navを上のところで固定する  */
+}
+
+nav a{
+    font-family: 'Press Start 2P', cursive;
+    color: #fa87fa;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #f4d2f4;
+    transition: 0.3s
+}
+
+#title h1 {
     font-family: 'Press Start 2P', cursive;
     color: #fff;
     text-align: center;
     font-size: 100px;
 }
 
-.col{
+.col {
     margin: 20px;
 }
 
-
-.col h2 span{   
+.col h2 span {
     color: #fff;
     border-bottom: 5px solid red;
     font-family: 'Press Start 2P', cursive;
 }
 
-body{
-    margin: 10px;
+body {
     background-color: rgb(46, 48, 50);
     background-attachment: fixed;
     background-position: center center;
 }
 
-.btn{
-    margin: 20px;
+hooter{
+    display: inline;
+     background: #d800ff;
+     color:#fa87fa;
+}
+
+.btn {
+    margin: 70px;
     font-size: 100px;
     border-radius: 100px;
     text-decoration: none;
     display: inline-block;
 }
 
-.no1{
+.btn:hover {
+     font-size: 150px;
+}
+
+.anm1 {
     color: rgb(127, 255, 212);
-    background-color:rgb(32, 178, 170); 
+    background-color: rgb(32, 178, 170);
     border: 5px solid rgb(32, 178, 170);
 }
 
-.no1:hover{
+.anm1:hover {
     color: rgb(32, 178, 170);
-    background-color:rgb(127, 255, 212); 
-    border: 5px solid rgba(32, 178, 170, .22);
-    transition: .3s;
+    background-color: rgb(127, 255, 212);
+    border: 5px solid rgb(127, 255, 212);
+    transition: .5s;
+    box-shadow: 20px 20px 30px #00674b;
 }
 
-.no2{
+.anm2 {
     color: rgba(245, 56, 128, 0.94);
-    background-color:rgba(250, 159, 194, 0.94); 
+    background-color: rgba(250, 159, 194, 0.94);
     border: 5px solid rgba(250, 159, 194, 0.94);
 }
 
-.no2:hover{
-    color: #005f76;
-    background-color:rgba(32, 178, 170, .22); 
-    border: 5px solid rgba(32, 178, 170, .22);
+.anm2:hover {
+    color: rgba(250, 159, 194, 0.94);
+    background-color: rgba(245, 56, 128, 0.94);
+    border: 5px solid rgba(245, 56, 128, 0.94);
+    transition: .7s;
+    transform: translateY(-10px);
+}
+
+.anm3 {
+    color: rgb(255, 186, 127);
+    background-color: rgb(245, 121, 15);
+    border: 5px solid rgb(245, 121, 15);
+}
+
+.anm3:hover {
+    color: rgb(245, 121, 15);
+    background-color: rgb(255, 186, 127);
+    border: 5px solid rgb(255, 186, 127);
+    transition: .7s;
+    border-radius: 2px;
+}
+
+.anm4 {
+    color: #4559f4;
+    background-color: #152390;
+    border: 5px solid #152390;
+}
+
+.anm4:hover {
+    color: #152390;
+    background-color: color: #4559f4;
+    border: 5px solid color: #4559f4;
+    transition: .7s;
+    transform: rotate(360deg);
+}
+
+.anm5 {
+    color: rgb(255, 143, 73);
+    background-color: rgb(255, 245, 0);
+    border: 5px solid rgb(255, 245, 0);
+}
+
+.anm5:hover {
+    color: rgb(255, 245, 0);
+    background-color: rgb(255, 143, 73);
+    border: 5px solid rgb(255, 143, 73);
     transition: .3s;
 }
-
-.no3{
-    color: rgb(127, 255, 212);
-    background-color:rgb(32, 178, 170); 
-    border: 5px solid rgb(32, 178, 170);
+/*
+.anm6 {
+    color: rgb(63, 248, 63);
+    background-color: rgb(24, 90, 24);
+    border: 5px solid rgb(24, 90, 24);
+    position: absolute;
+    bottom: 0px;
+    left:0px;
 }
 
-.no3:hover{
-    color: #005f76;
-    background-color:rgba(32, 178, 170, .22); 
-    border: 5px solid rgba(32, 178, 170, .22);
-    transition: .3s;
+.rotateno6{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    position: relative;
+    transform: 1s linner all;
+    background-color: azure;
 }
 
-.no4{
-    color: rgb(127, 255, 212);
-    background-color:rgb(32, 178, 170); 
-    border: 5px solid rgb(32, 178, 170);
+.rotateno6:hover{
+     transform: 1s linner all;
+     transform: rotate(360deg);
+    transition: 3s;
 }
 
-.no4:hover{
-    color: #005f76;
-    background-color:rgba(32, 178, 170, .22); 
-    border: 5px solid rgba(32, 178, 170, .22);
-    transition: .3s;
+
+.rotateno6:hover .anm6 {
+    color: rgb(40, 255, 0);
+    background: none;
+    border: none;
+    transition: 1s;
+    font-size: 150px;
 }
 
-.no5{
-    color: rgb(127, 255, 212);
-    background-color:rgb(32, 178, 170); 
-    border: 5px solid rgb(32, 178, 170);
-}
+*/
 
-.no5:hover{
-    color: #005f76;
-    background-color:rgba(32, 178, 170, .22); 
-    border: 5px solid rgba(32, 178, 170, .22);
-    transition: .3s;
-}
 
-.no6{
-    color: rgb(127, 255, 212);
-    background-color:rgb(32, 178, 170); 
-    border: 5px solid rgb(32, 178, 170);
-}
 
-.no6:hover{
-    color: #005f76;
-    background-color:rgba(32, 178, 170, .22); 
-    border: 5px solid rgba(32, 178, 170, .22);
-    transition: .3s;
-}
+
+
+
 
