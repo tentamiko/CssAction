@@ -1,0 +1,119 @@
+.mytweet {
+    background: red;
+}
+
+.align-center{
+    text-align: center;
+}
+
+#title h1{
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    text-align: center;
+    font-size: 100px;
+}
+
+.col{
+    margin: 20px;
+}
+
+
+.col h2 span{   
+    color: #fff;
+    border-bottom: 5px solid red;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    margin: 10px;
+    background-color: rgb(46, 48, 50);
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.btn{
+    margin: 20px;
+    font-size: 100px;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.no1{
+    color: rgb(127, 255, 212);
+    background-color:rgb(32, 178, 170); 
+    border: 5px solid rgb(32, 178, 170);
+}
+
+.no1:hover{
+    color: rgb(32, 178, 170);
+    background-color:rgb(127, 255, 212); 
+    border: 5px solid rgba(32, 178, 170, .22);
+    transition: .3s;
+}
+
+.no2{
+    color: rgba(245, 56, 128, 0.94);
+    background-color:rgba(250, 159, 194, 0.94); 
+    border: 5px solid rgba(250, 159, 194, 0.94);
+}
+
+.no2:hover{
+    color: #005f76;
+    background-color:rgba(32, 178, 170, .22); 
+    border: 5px solid rgba(32, 178, 170, .22);
+    transition: .3s;
+}
+
+.no3{
+    color: rgb(127, 255, 212);
+    background-color:rgb(32, 178, 170); 
+    border: 5px solid rgb(32, 178, 170);
+}
+
+.no3:hover{
+    color: #005f76;
+    background-color:rgba(32, 178, 170, .22); 
+    border: 5px solid rgba(32, 178, 170, .22);
+    transition: .3s;
+}
+
+.no4{
+    color: rgb(127, 255, 212);
+    background-color:rgb(32, 178, 170); 
+    border: 5px solid rgb(32, 178, 170);
+}
+
+.no4:hover{
+    color: #005f76;
+    background-color:rgba(32, 178, 170, .22); 
+    border: 5px solid rgba(32, 178, 170, .22);
+    transition: .3s;
+}
+
+.no5{
+    color: rgb(127, 255, 212);
+    background-color:rgb(32, 178, 170); 
+    border: 5px solid rgb(32, 178, 170);
+}
+
+.no5:hover{
+    color: #005f76;
+    background-color:rgba(32, 178, 170, .22); 
+    border: 5px solid rgba(32, 178, 170, .22);
+    transition: .3s;
+}
+
+.no6{
+    color: rgb(127, 255, 212);
+    background-color:rgb(32, 178, 170); 
+    border: 5px solid rgb(32, 178, 170);
+}
+
+.no6:hover{
+    color: #005f76;
+    background-color:rgba(32, 178, 170, .22); 
+    border: 5px solid rgba(32, 178, 170, .22);
+    transition: .3s;
+}
+
