@@ -12,10 +12,6 @@ body{
     padding-top:64px;
 }
 
-.mytweet {
-    background: red;
-}
-
 .align-center {
     text-align: center;
 }
@@ -26,7 +22,7 @@ margin:70px;
 }
 
 .bg-img{
-    background-image: url(mokume.jpg);
+    background-image: url(kiban.jpg);
     /* ↑はclass:bg-imageにmokume.jpgを入れている */
     width: 100%;
     height: 200px;
@@ -34,33 +30,48 @@ margin:70px;
     /* ↑はその画像がスクロールについてこなくしている　*/
 }
 
-.bg-img .sns-button {
-    background-color: red;
-    position: absolute;
-    /*↑場所が指定できる*/
-    width: 100px;
-    bottom: 0px;
+.bg-img a{
+     color: #28d100;
+     font-size: 50px;
+    margin-left: 70px;
+    
+     top: 70px;
+     position: relative;
+     /*上２つは上下方向のmarginが効かなくなっている時に空白を開けたい時*/
+     text-decoration: none;
+     font-family: 'Press Start 2P', cursive;
+}
+
+.bg-img a:hover{
+    color: #196c06;
+    text-decoration: underline;
 }
 
 nav{
+    text-align: left;
+    z-index: 1000;
+/*    ↑これはどれだけ手前に来ているか。レイヤー的な*/
     height: 64px;
     top: 0px;
     left: 0px;
     right: 0px;
-    background: #d800ff;
-    font-size: 50px;
+    background: #ff0000;
+    font-size: 20px;
     position: fixed;
     /*  ↑navを上のところで固定する  */
 }
 
 nav a{
+    margin: 20px;
+    top: 30px;
+    position: relative;
     font-family: 'Press Start 2P', cursive;
-    color: #fa87fa;
+    color: #fff;
     text-decoration: none;
 }
 
 nav a:hover{
-    color: #f4d2f4;
+    color: #b1b1b1;
     transition: 0.3s
 }
 
@@ -120,9 +131,11 @@ hooter{
 }
 
 .anm2 {
+    overflow: hidden;
     color: rgba(245, 56, 128, 0.94);
     background-color: rgba(250, 159, 194, 0.94);
     border: 5px solid rgba(250, 159, 194, 0.94);
+    position: relative;
 }
 
 .anm2:hover {
@@ -130,19 +143,36 @@ hooter{
     background-color: rgba(245, 56, 128, 0.94);
     border: 5px solid rgba(245, 56, 128, 0.94);
     transition: .7s;
-    transform: translateY(-10px);
+}
+
+.anm2 .anm2-fowerd{
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(256, 256, 256, .7);
+    opacity: 0;
+}
+
+.anm2:hover .anm2-fowerd{
+    color: rgba(245, 56, 128, 0.94);
+    top: 0;
+    opacity: 1;
 }
 
 .anm3 {
-    color: rgb(255, 186, 127);
-    background-color: rgb(245, 121, 15);
-    border: 5px solid rgb(245, 121, 15);
+    color: #fff;
+    background-color: #ff0000;
+    border: 5px solid #ff0000);
 }
 
 .anm3:hover {
-    color: rgb(245, 121, 15);
-    background-color: rgb(255, 186, 127);
-    border: 5px solid rgb(255, 186, 127);
+    color: #ff0000;
+    background-color: #fff;
+    border: 5px solid #fff;
     transition: .7s;
     border-radius: 2px;
 }
@@ -154,6 +184,7 @@ hooter{
 }
 
 .anm4:hover {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
     color: #152390;
     background-color: color: #4559f4;
     border: 5px solid color: #4559f4;
@@ -168,20 +199,23 @@ hooter{
 }
 
 .anm5:hover {
+
     color: rgb(255, 245, 0);
-    background-color: rgb(255, 143, 73);
-    border: 5px solid rgb(255, 143, 73);
+    background-image: radial-gradient(circle,#ffba00,#ffe200,#ff8000);
+    border: 5px solid #ffba00;
     transition: .3s;
 }
-/*
+
 .anm6 {
     color: rgb(63, 248, 63);
     background-color: rgb(24, 90, 24);
     border: 5px solid rgb(24, 90, 24);
     position: absolute;
-    bottom: 0px;
-    left:0px;
+    bottom: -70px;
+    left:7px;
 }
+
+
 
 .rotateno6{
     width: 240px;
@@ -189,17 +223,17 @@ hooter{
     border-radius: 50%;
     position: relative;
     transform: 1s linner all;
-    background-color: azure;
+    background-color: rgba(0, 255, 255, 0);
 }
 
-.rotateno6:hover{
+.rotateno6.hovered{
      transform: 1s linner all;
-     transform: rotate(360deg);
-    transition: 3s;
+     transform: rotate(-360deg);
+    transition: 1s;
 }
 
 
-.rotateno6:hover .anm6 {
+.rotateno6.hovered .anm6 {
     color: rgb(40, 255, 0);
     background: none;
     border: none;
@@ -207,7 +241,7 @@ hooter{
     font-size: 150px;
 }
 
-*/
+
 
 
 

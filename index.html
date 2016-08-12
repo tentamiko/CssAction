@@ -2,26 +2,27 @@
 <html lang="jp">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>CSS Animation Museum</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
       
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/script.js"></script> 
 </head>
 <body>
       
-      <nav class="align-center">
+      <nav>
          <div>
-          <a href="index.html">HOME</a>
-          <a href="#museum">MUSEUM</a>
-          <a href="#profile">PROFILE</a>
+          <a href="#" class="nav-item">HOME</a>
+          <a href="#museum" class="nav-item">MUSEUM</a>
+          <a href="#profile" class="nav-item">PROFILE</a>
          </div>
       </nav>
        
     <div class="bg-img">
           
-          <a href="" class="my-tw">Tweet</a>
-           
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <a href="https://twitter.com/share" class="my-tweet align-center">Press Tweet!!</a>
+        
     </div>
       
       
@@ -35,13 +36,18 @@
           </h2>
           <p>
               <a href="javscript:void(0)" class="btn anm1">➹</a>
-              <a href="javscript:void(0)" class="btn anm2">✐</a>
+              <a href="javscript:void(0)" class="btn anm2">
+                  ✐
+                  <span class="anm2-fowerd align-text">
+                      Write
+                  </span>
+              </a>
               <a href="javscript:void(0)" class="btn anm3">❤</a>
               <br>
               <a href="javscript:void(0)" class="btn anm4">✂</a>
               <a href="javscript:void(0)" class="btn anm5">♬</a>
-              <div class="rotateno6">
-              <a href="javscript:void(0)" class="anm6">✈</a>
+              <div class="btn rotateno6">
+              <a href="javscript:void(0)" class="anm6 btn">✈</a>
               </div>
           </p>
       </div>
@@ -53,14 +59,14 @@
           <p class="document">
               製作者は主にUnityやWeb関連をいじるのが大好きな高校生です<br><br>
               このサイトはCSS3でできる色々なアニメーションをまとめたサイトです<br><br>
-              どうぞ御覧ください
+              どうぞ御覧ください!
               
           </p>
       </div>
     
-    <hooter>&copy;
+<!--    <hooter>&copy;-->
         <!--↑コピーライトの丸C-->
-    </hooter>
+<!--    </hooter>-->
     
     
 </body>
